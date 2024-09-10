@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BOLT - Home</title>
+    <style>
+      body {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-image: url('bg.jpeg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat; /
+      }
+
+      header,
+      section,
+      footer {
+        width: 80%;
+        margin: 20px 0;
+        text-align: center;
+
+      }
+
+      table {
+        margin: 0 auto;
+        border-collapse: collapse;
+        width: 60%;
+      }
+
+      th,
+      td {
+        padding: 10px;
+        border: 1px solid #ddd;
+        text-align: left;
+      }
+
+      ul {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      ul li {
+        padding: 5px 0;
+      }
+
+      footer {
+        margin-top: 40px;
+        padding: 20px 0;
+        background-color: rgb(96,128,192);
+        width: 100%;
+      }
+
+      footer p,
+      footer a {
+        margin: 5px;
+
+      }
+
+      marquee {
+        margin: 20px 0;
+        font-size: 1.2em;
+        font-weight: bold;
+        color: #15106c;
+      }
+
+      .form-container {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+      }
+
+      form {
+        margin-top: 20px;
+        width: 100%;
+        max-width: 500px;
+      }
+
+      fieldset {
+        border: 2px solid #007bff;
+        padding: 20px;
+        border-radius: 8px;
+        box-sizing: border-box;
+      }
+
+      legend {
+        font-size: 1.2em;
+        font-weight: bold;
+        color: #007bff;
+      }
+
+      form input,
+      form textarea {
+        margin: 10px 0;
+        padding: 10px;
+        width: calc(100% - 22px);
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+
+      form button {
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        width: 100%;
+      }
+
+      form button:hover {
+        background-color: #0056b3;
+      }
+
+      h1 {
+        color: rgb(18, 16, 85);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header>
+      <h1>Welcome to BOLT</h1>
+      <img src="logo.jpeg" alt="Company Logo" width="350" height="200" />
+    </header>
+
+    <!-- Marquee Section -->
+    <marquee behavior="scroll" direction="left" scrollamount="10" loop="-1">
+      Welcome to BOLT - Your Trusted Partner in Insurance Solutions!
+    </marquee>
+
+    <!-- Introduction Section -->
+    <section>
+      <h2>About Us</h2>
+      <table>
+        <tr>
+          <th>Company Name:</th>
+          <td>BOLT</td>
+        </tr>
+        <tr>
+          <th>Address:</th>
+          <td>PO Box 204389 Austin, TX 78729</td>
+        </tr>
+        <tr>
+          <th>Contact Information:</th>
+          <td>Email: info@boltinc.com | Phone: +1 800-216-4171</td>
+        </tr>
+        <tr>
+          <th>Description:</th>
+          <td>
+            Our world-leading insurance exchange is a dynamic digital
+            marketplace, offering businesses the ability to add insurance to
+            their customer journeys.
+          </td>
+        </tr>
+      </table>
+      <p>What we have stored for you :</p>
+      <audio controls>
+        <source src="introduction.mp3" type="audio/mp3" />
+        Your browser does not support the audio element.
+      </audio>
+    </section>
+
+    <!-- Services Section -->
+    <section>
+      <h2>Our Services</h2>
+      <ul>
+        <li>Consulting Services</li>
+        <li>Product Development</li>
+        <li>Customer Support</li>
+        <li>Training & Workshops</li>
+      </ul>
+    </section>
+
+    <!-- Promotional Video Section -->
+    <section>
+      <h2>Check Out Our Promotional Video</h2>
+      <video width="640" height="360" controls>
+        <source src="videoofcompany.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </section>
+
+    <section>
+      <h2>Contact Us</h2>
+      <div class="form-container">
+        <form action="submit_form.php" method="post">
+          <fieldset>
+            <legend>Get in Touch</legend>
+            <input type="text" name="name" placeholder="Your Name" required />
+            <input
+              type="email"
+              name="email"
+              placeholder="Your Email"
+              required
+            />
+            <input type="text" name="subject" placeholder="Subject" required />
+            <textarea
+              name="message"
+              rows="5"
+              placeholder="Your Message"
+              required
+            ></textarea>
+            <button type="submit">Send Message</button>
+          </fieldset>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+      <p>Connect with us on social media:</p>
+      <a href="https://www.facebook.com/xyzsolutions" target="_blank"
+        >Facebook</a
+      >
+      |
+      <a href="https://www.twitter.com/xyzsolutions" target="_blank">Twitter</a>
+      |
+      <a href="https://www.linkedin.com/company/xyzsolutions" target="_blank"
+        >LinkedIn</a
+      >
+      <p>&copy; 2024 BOLT. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
